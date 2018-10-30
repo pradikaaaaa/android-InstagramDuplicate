@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.uts3cyahya.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/LayoutAtas"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imgMenuStory"
+            android:layout_marginTop="8dp"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ig_cam" />
+
+        <ImageView
+            android:id="@+id/imageViewlogoMain"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-40dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/instagram" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imgMenuDM"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="85dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/LayoutAtas"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/ig_send" />
+
+<android.support.v7.widget.CardView
+    android:id="@+id/cvStory"
+    android:layout_below="@id/LayoutAtas"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_story"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/LayoutAtas"
+        android:scrollbars="none">
+
+    </android.support.v7.widget.RecyclerView>
+</android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_main"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_below="@id/cvStory"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/LayoutBawah"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rv_main"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgMenuHome"
+            android:layout_marginTop="11dp"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ig_home" />
+
+        <ImageView
+            android:id="@+id/imgMenuExp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ig_search" />
+
+        <ImageView
+            android:id="@+id/imgMenuPost"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ig_add" />
+
+
+        <ImageView
+            android:id="@+id/imgMenuNotif"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ig_love" />
+
+        <ImageView
+            android:id="@+id/imgMenuProfile"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ig_profile" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
